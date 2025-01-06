@@ -1,15 +1,4 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #FBF8F4;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-}
-.telaLogin {
+.telaRecuperacao {
     height: 100vh;
     background-color: #FBF8F4;
     font-family: Montserrat;
@@ -27,9 +16,9 @@ html, body {
 
 .titulo {
     color: #4B626C;
-    padding: 25px;
+    padding: 0x;
     margin-left: 136px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 50px;
 }
 
@@ -37,7 +26,7 @@ html, body {
     margin-top: 45px;
 }
 
-#email, #senha {
+#email {
     background-color: #EFEFEF;
     color: #97A4A2;
     border: #fbf8f4;
@@ -56,7 +45,7 @@ html, body {
     outline: none;
 }
 
-.botao-login {
+.botao-recuperacao {
     background-color: transparent;
     border: none;
     font-size: 30px;

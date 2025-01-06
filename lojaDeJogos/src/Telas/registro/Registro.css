@@ -1,11 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
+.telaRegistro{
+    height: 100vh;
     background-color: #FBF8F4;
     font-family: Montserrat;
-}
+    margin: 0;
+    padding: 0;
 
-#imagem{
+.imgdeFundo{
    position: fixed;
     top: -120px;
     width: 1024px;
@@ -14,35 +14,58 @@
     right: 0px;
 }
 
-.registro{
+.titulo{
     color: #4B626C;
-    padding: 50px;
-    margin-left: 180px;
-    margin-bottom: 20px;
+    padding: 25px;
+    margin-left: 76px;
+    margin-bottom: 10px;
     font-size: 50px;
 }
 
-#nome, #emailRegistro, #cpf, #senhaRegistro, #confirmarSenha {
+.erro{
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    margin-left: 56px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.form input{
+    margin-top: 45px;
+}
+
+#nome, #email, #cpf, #senha, #confirmacaoSenha{
     background-color: #EFEFEF;
     color: #97A4A2;
-    border: none;
+    border: #fbf8f4;
     padding: 5px 5px 5px 20px;
-    margin-bottom: 50px;
-    margin-left: 150px;
+    margin-left: 56px;
     box-shadow: 0 4px 20px #00000040;
     display: block;
-    width: 300px;
+    width: 335px;
     height: 30px;
-    top: 204px;
-    left: 432px;
+    left: 56px;
     border-radius: 5px;
     font-size: 24px;
     font-weight: 300;
     line-height: 29.26px;
     text-align: left;
+    outline: none;
+}
+
+.botao-registro {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 382px;
+    color: #4B626C;
+    cursor: pointer;
 }
 
 .tela {
+    background-color: #fbf8f4;
     color: #97A4A2;
     padding: 50px;
     position: fixed;
@@ -61,4 +84,5 @@
 
 .tela a:hover {
     color: #4B626C;
+}
 }

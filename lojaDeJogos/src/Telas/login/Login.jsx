@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 import imagemFundo from '../../assets/imagem.png';
 
 
-function Login() {
+function Login({dadosUsuario}) {
 
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [erro, setErrors] = useState({ email: '', senha: '' });
+
+   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,27 +20,32 @@ function Login() {
     if(!email){
       formErro.email = "O email é obrigatório.";
     }
+    else if(dadosUsuario.email !== email){
+      formErro.email = "Usuário inválido."
+    }
 
     if(!senha){
-      formErro.email = "A senha é obrigatória.";
+      formErro.senha = "A senha é obrigatória.";
+    }
+    else if(dadosUsuario.senha !== senha){
+      formErro.email = "Senha inválida."
     }
 
     setErrors(formErro);
 
     if (!formErro.email && !formErro.senha) {
-      console.log('Formulário enviado com sucesso');
+      console.log('Login feito com sucesso!');
     }
   };
 
   return (
-    <div>
-      <div className="tela-inicio">
-        <p className="login">Login</p>
+      <div className="telaLogin">
+        <p className="titulo">Login</p>
         <div className="form">
           <input 
           type="email" 
           id="email" 
-          placeholder="Email"
+          placeholder="E-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           />
@@ -51,16 +59,15 @@ function Login() {
           />
           {erro.senha ? <p className="erro">{erro.senha}</p> : null}
           <button className="botao-login" onClick={handleSubmit}>
-            <span className="seta"></span>
+                    <i className="fas fa-arrow-right"></i>
           </button>
         </div>
-        <img src={imagemFundo} alt="Imagem de fundo" />
-      </div>
-      <div id="telas">
+      <img className="imgdeFundo" src={imagemFundo} alt="Imagem de fundo" />
+        <div id="telas">
         <a href="/registro">Criar conta</a>
-        <a href="#">Esqueceu a senha?</a>
+        <a href="/recuperacaodeconta">Esqueceu a senha?</a>
+        </div>
       </div>
-    </div>
   );
 }
 
