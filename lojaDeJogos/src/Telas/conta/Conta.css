@@ -1,0 +1,199 @@
+.telaConta {
+    display: block;
+    padding: 0;
+    height: 100vh;
+    background-color: #FBF6F0;
+    font-family: Montserrat;
+    margin: 0;
+
+    .icone{
+        margin-left: 30px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #FBF6F0;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px #181717bb;
+        z-index: 1;
+    }
+    .navbar .nav-links {
+        display: flex;
+        gap: 15px;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 39.01px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a:hover {
+        transform: scale(1.05);
+    }
+  
+    .navbar .nav-links a {
+        text-decoration: none;
+        color: #4B626C;
+        padding: 15px 40px 15px 25px;
+        border-left: none;
+        border-right: 1px solid #4B626C;
+        transition: 0.5s;
+    }
+    
+    .navbar .nav-links a:last-child {
+        border-right: none;
+    }
+    
+    #pesquisa{
+        background-color: #97A4A273;
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        margin-top: -25px;
+        margin-left: 100px;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 3px 6px #181717bb;
+        outline: none;
+        padding-left: 20px;
+        font-size: 32px;
+    }
+
+    .pesquisa-container i {
+        position: absolute;
+        right: 200px;
+        transform: translateY(-50%);
+        color: #4B626C;
+        font-size: 25px;
+      }
+
+      #titulo{
+        position: absolute;
+        color: #FBF6F0;
+        width: 280px;
+        font-size: 40px;
+        line-height: 39.01px;
+        top: 0px;
+        left: 100px;
+    }
+    #carrinhodecompras{
+        position: absolute;
+        z-index: 1;
+        top: 700px;
+        left: 700px;
+        width: 100px;
+        height: auto;
+    }
+      .jogos { 
+        background-color: #4B626C; 
+        padding: 150px 160px;
+        position: absolute; 
+        left: 55%; 
+        height: 100%; 
+        width: 40%; 
+        max-width: 40%;
+    }
+    
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, 200px); 
+        gap: 50px 80px; 
+    }
+    
+    .grid-item { 
+        position: relative; 
+    }
+    
+    .grid-item img { 
+        object-fit: cover; 
+        border-radius: 5px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s; 
+        width: 100%; 
+        height: auto; 
+        cursor: pointer;
+    }
+    
+    .grid-item img:hover { 
+        transform: scale(1.05); /* Aumenta a imagem levemente no hover */ 
+    }
+    
+    .avaliacao { 
+        position: absolute; 
+        top: 250px;
+        left: 0px; 
+        background-color: rgba(0, 0, 0, 0.7); 
+        color: #FBF6F0; 
+        padding: 5px; 
+        border-radius: 5px; 
+        cursor: pointer;
+    }
+
+    .avaliacao:hover{
+        transform: scale(1.05);
+    }
+        .infos h2{
+        font-weight: 600;
+    }
+
+    .infos{
+    color: #4B626C;
+    margin-left: 130px;
+    margin-top: 165px;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 58.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    }
+
+    button{
+        background-color: #4B626C;
+        color: #FBF6F0;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 10px 15px 20px;
+        width: 270px;
+        height: 45px;
+        top: 640px;
+        left: 112px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.57px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        display: block;
+        margin-bottom: 50px;
+        align-items: center;
+        margin-right: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: #97A4A273;
+    }
+    
+    #admin{
+        background-color: #97A4A273;
+    }
+
+    #admin:hover{
+        background-color: #4B626C;
+    }
+
+    .jogos i{
+        margin-left: 100px;
+    }
+    
+}
