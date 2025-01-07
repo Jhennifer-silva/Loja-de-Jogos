@@ -7,7 +7,6 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
 }
 .telaLogin {
     height: 100vh;
@@ -15,20 +14,21 @@ html, body {
     font-family: Montserrat;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 
 .imgdeFundo {
     position: fixed;
-    top: -120px;
-    width: 1024px;
-    height: 1024px;
-    left: 475px;
+    top: -200px;
+    width: 1224px;
+    height: 1224px;
+    left: 700px;
     right: 0px;
 }
 
 .titulo {
     color: #4B626C;
     padding: 25px;
-    margin-left: 136px;
+    margin-left: 272px;
     margin-bottom: 10px;
     font-size: 50px;
 }
@@ -42,7 +42,7 @@ html, body {
     color: #97A4A2;
     border: #fbf8f4;
     padding: 5px 5px 5px 20px;
-    margin-left: 56px;
+    margin-left: 180px;
     box-shadow: 0 4px 20px #00000040;
     display: block;
     width: 335px;
@@ -56,23 +56,23 @@ html, body {
     outline: none;
 }
 
+.erro {
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    margin-left: 180px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
 .botao-login {
     background-color: transparent;
     border: none;
     font-size: 30px;
     margin-top: 30px;
-    margin-left: 382px;
+    margin-left: 500px;
     color: #4B626C;
     cursor: pointer;
-}
-
-.erro {
-    position: absolute;
-    background-color: transparent;
-    color: red;
-    margin-left: 56px;
-    margin-top: 5px;
-    margin-bottom: 0px;
 }
 
 #telas {

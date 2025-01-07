@@ -28,13 +28,14 @@ function Login({dadosUsuario}) {
       formErro.senha = "A senha é obrigatória.";
     }
     else if(dadosUsuario.senha !== senha){
-      formErro.email = "Senha inválida."
+      formErro.senha = "Senha inválida."
     }
 
     setErrors(formErro);
 
     if (!formErro.email && !formErro.senha) {
       console.log('Login feito com sucesso!');
+      navigate('/conta');
     }
   };
 
