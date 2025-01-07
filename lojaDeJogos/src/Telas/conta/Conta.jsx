@@ -7,6 +7,7 @@ import jogo4 from '../../assets/conta/jogo4.png';
 import carrinho from'../../assets/carrinho.png';
 import { Link } from 'react-router-dom';
 import './conta.css';
+import '../../styles.css'
 
 function Conta({dadosUsuario}) {
     return (
@@ -16,10 +17,10 @@ function Conta({dadosUsuario}) {
                     <img src={icone} alt="Icone do site" className="icone" />
                 </Link>
                 <ul className="nav-links">
-                <a href="/lancamentos">Lançamentos</a> 
+                <a href="principal#lancamentos">Lançamentos</a> 
                 <a href="#">Populares</a> 
                 <a href="#">Gêneros</a> 
-                <a href="#">Promoções</a> 
+                <a href="principal#promocoes">Promoções</a> 
                 <a href="/conta">Conta</a>
                 </ul>
                 <div className="pesquisa-container">
@@ -49,7 +50,7 @@ function Conta({dadosUsuario}) {
                 </div>
                 <img src={carrinho} alt="Carrinho de compra" id="carrinhodecompras"/>
             </div>
-            <div className="infos">
+            <div className="configs">
                 <h2>Olá, {dadosUsuario.nome}</h2>
                 <p>Seu email é {dadosUsuario.email}</p>
                 <p>Seu CPF é {dadosUsuario.cpf}</p>

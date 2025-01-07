@@ -3,18 +3,19 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #FBF8F4;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
 }
+
 .telaLogin {
     height: 100vh;
     background-color: #FBF8F4;
     font-family: Montserrat;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow:visible;
+    position: fixed;
+    top: 0;
+    left: 0;
 
 .imgdeFundo {
     position: fixed;

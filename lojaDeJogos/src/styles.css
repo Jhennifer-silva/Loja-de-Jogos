@@ -1,0 +1,169 @@
+.icone{
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    background-color: #FBF6F0;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px #181717bb;
+    z-index: 1000;
+}
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.01px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #4B626C;
+    padding: 15px 25px 15px 10px;
+    border-left: none;
+    border-right: 1px solid #4B626C;
+    transition: 0.5s;
+}
+
+.navbar .nav-links a:last-child {
+    border-right: none;
+}
+
+#pesquisa{
+    background-color: #97A4A273;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: 35px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 3px 6px #181717bb;
+    outline: none;
+    padding-left: 20px;
+    font-size: 32px;
+}
+
+.pesquisa-container i {
+    position: absolute;
+    right: 75px;
+    transform: translateY(-50%);
+    color: #4B626C;
+    font-size: 25px;
+  }
+
+  .rodape{
+    background-color: #97A4A2;
+    position: absolute;
+    bottom: 0px;
+    top: 1073px;
+    height: 393px;
+    width: 100%;
+    display: flex;
+}
+
+.iconeRodape{
+    position: absolute;
+    top: 112px;
+    left: 21px;
+    width: 164px;
+    height: 164px;
+    border-radius: 10px;
+
+}
+#nomeSite{
+    position: absolute;
+    top: 100px;
+    left: 232px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: left;
+    color: #FBF8F3;
+}
+#slogan{
+    color: #FBF8F3;
+    position: absolute;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.01px;
+    text-align: center;
+    width: 329px;
+    height: 77px;
+    top: 150px;
+    left: 185px;
+}
+.othersPages {
+    display: flex;
+    flex-direction: column;
+    color: #FBF8F3;
+    font-size: 32px;
+    text-align: center;
+    margin-left: 644px;
+    margin-top: 50px;
+}
+
+.othersPages a{
+    color: #FBF8F3;
+    text-decoration: none;
+    padding: 7px;
+    border-left: none;
+    transition: 0.5s;
+}
+
+.othersPages h3{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.othersPages a:hover{
+    transform: scale(1.03);
+}
+
+.creditos{
+    color: #4B626C;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 60px;
+    left: 489px;
+
+}
+
+.creditos p{
+font-size: 24px;
+font-weight: 300;
+line-height: 29.26px;
+padding: 0px 10px;
+}
+
+#criador{
+    border-left: 1px solid #4B626C;
+    height: 30px;
+}
+
+.infos{
+    color: #FBF8F3;
+    position: absolute;
+    font-size: 32px;
+    left: 1022px;
+}
