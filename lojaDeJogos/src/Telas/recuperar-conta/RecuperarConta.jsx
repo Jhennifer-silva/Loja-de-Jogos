@@ -23,10 +23,12 @@ function RecuperarConta ({dadosUsuario}){
         
 return (
       <div className="telaRecuperacao">
-        <p className="titulo">
+        <div className="titulo">
+        <p>
             Recuperar <br/>
             Conta <br/>
         </p>
+        </div>
         <div className="form">
           <input 
           type="email" 

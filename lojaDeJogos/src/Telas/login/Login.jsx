@@ -41,8 +41,11 @@ function Login({dadosUsuario}) {
 
   return (
       <div className="telaLogin">
-        <p className="titulo">Login</p>
+        
         <div className="form">
+          <div className="titulo">
+            <p>Login</p>
+          </div>
           <input 
           type="email" 
           id="email" 
@@ -60,7 +63,7 @@ function Login({dadosUsuario}) {
           />
           {erro.senha ? <p className="erro">{erro.senha}</p> : null}
           <button className="botao-login" onClick={handleSubmit}>
-                    <i className="fas fa-arrow-right"></i>
+            <i className="fas fa-arrow-right"></i>
           </button>
         </div>
       <img className="imgdeFundo" src={imagemFundo} alt="Imagem de fundo" />

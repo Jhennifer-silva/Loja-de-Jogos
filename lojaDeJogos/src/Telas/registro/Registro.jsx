@@ -36,7 +36,9 @@ function Registro({ setDadosUsuario }) {
 
     return (
         <div className="telaRegistro">
-            <p className="titulo">Registrar</p>
+            <div className="titulo">
+            <p >Registrar</p>
+            </div>
             <div className="form">
                 <input 
                     type="text" 

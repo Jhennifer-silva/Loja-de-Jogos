@@ -48,10 +48,10 @@
 #pesquisa{
     background-color: #97A4A273;
     position: absolute;
-    width: 250px;
+    width: 200px;
     height: 50px;
     margin-top: -25px;
-    margin-left: 35px;
+    margin-left: 0px;
     border-radius: 15px;
     border: none;
     box-shadow: 0 3px 6px #181717bb;
@@ -62,7 +62,7 @@
 
 .pesquisa-container i {
     position: absolute;
-    left: 1430px;
+    left: 1350px;
     transform: translateY(-50%);
     color: #4B626C;
     font-size: 25px;
@@ -91,7 +91,6 @@
     left: 232px;
     font-size: 36px;
     font-weight: 700;
-    line-height: 43.88px;
     text-align: left;
     color: #FBF8F3;
 }
@@ -120,7 +119,7 @@
 .othersPages a{
     color: #FBF8F3;
     text-decoration: none;
-    padding: 7px;
+    padding: 6px;
     border-left: none;
     transition: 0.5s;
 }
@@ -132,6 +131,22 @@
 
 .othersPages a:hover{
     transform: scale(1.03);
+}
+
+.infos{
+    color: #FBF8F3;
+    position: absolute;
+    font-size: 24px;
+    top: 60px;
+    left: 1022px;
+}
+.infos h3{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+.infos p{
+    padding: 0px;
 }
 
 .creditos{
@@ -159,9 +174,3 @@ padding: 0px 10px;
     height: 30px;
 }
 
-.infos{
-    color: #FBF8F3;
-    position: absolute;
-    font-size: 32px;
-    left: 1022px;
-}

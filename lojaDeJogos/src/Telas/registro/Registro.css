@@ -6,25 +6,52 @@
     padding: 0;
     overflow:visible;
     position: fixed;
-    top: 0;
-    left: 0;
 
 .imgdeFundo{
-    position: absolute;
-    top: -160px;
-    width: 1124px;
-    height: 1124px;
-    left:475px;
-    right: 0px;
+    margin-left: 33%;
+    margin-top: -145px;
+    width: 1224px;
+    height: auto;
 }
 
-.titulo{
+.titulo p {
+    position: absolute;
     color: #4B626C;
     padding: 25px;
-    margin-left: -82px;
-    margin-bottom: 10px;
-    font-size: 50px;
-    text-align: center;
+    left: 90px;
+    top: 0px;
+    font-size: 6.4rem;
+}
+.form{
+    display: flex;
+    width: 475px;
+    z-index: 1000;
+}
+
+#nome, #email, #cpf, #senha, #confirmacaoSenha{
+    background-color: #EFEFEF;
+    position: absolute;
+    color: #97A4A2;
+    border: #fbf8f4;
+    padding: 8px 50px 8px 10px;
+    left: 82px;
+    box-shadow: 0 4px 20px #00000040;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    line-height: 29.26px;
+    top: 204px;
+}
+#email{
+    margin-top: 96px;
+}
+#cpf{
+    margin-top: 192px;
+}
+#senha{
+    margin-top: 288px;
+}
+#confirmacaoSenha{
+    margin-top: 384px;
 }
 
 .erro{
@@ -36,55 +63,220 @@
     margin-bottom: 0px;
 }
 
-.form input{
-    margin-top: 45px;
-}
-
-#nome, #email, #cpf, #senha, #confirmacaoSenha{
-    background-color: #EFEFEF;
-    color: #97A4A2;
-    border: #fbf8f4;
-    padding: 5px 5px 5px 20px;
-    margin-left: 42px;
-    box-shadow: 0 4px 20px #00000040;
-    display: block;
-    width: 335px;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29.26px;
-}
-
 .botao-registro {
+    position: absolute;
     background-color: transparent;
     border: none;
     font-size: 30px;
-    margin-top: 30px;
-    margin-left: 500px;
+    top:660px;
+    left: 395px;
     color: #4B626C;
     cursor: pointer;
 }
 
 .tela {
-    background-color: #fbf8f4;
-    color: #97A4A2;
     padding: 50px;
-    position: fixed;
+    position: absolute;
     bottom: -15px;
     left: 0;
     font-size: 20px;
 }
 
 .tela a {
-    color: #97A4A2;
     display: block;
     text-decoration: none;
+    color: #97A4A2;
     padding: 10px 0;
     transition: 0.5s;
 }
 
 .tela a:hover {
     color: #4B626C;
+}
+@media (max-width: 1100px){
+    .imgdeFundo {
+        margin-left: 350px;
+        width: 900px;
+        height: auto;
+    }
+
+    #nome, 
+    #email, 
+    #cpf, 
+    #senha, 
+    #confirmacaoSenha {
+    padding: 5px 5px 8px 10px;
+    font-size: 2.1rem;
+    }
+
+    .botao-registro {
+        top: 650px;
+        left: 330px;
+    }
+
+    .titulo p{
+        left: 60px;
+    }
+}
+@media (max-width: 768px){
+    .telaRegistro {
+        height: auto;
+        overflow-y: auto;
+    }
+    .imgdeFundo {
+        margin-top: -150px;
+        margin-left: 70px;
+        width: 650px;
+        height: auto;
+    }
+    .titulo p{
+        top: 400px;
+        left: 230px;
+        font-size: 5.4rem;
+    }
+    .form{
+        width: 768px;
+        height: auto;
+    }
+    #nome, 
+    #email, 
+    #cpf, 
+    #senha, 
+    #confirmacaoSenha {
+        margin-left: 150px;
+        top: 560px;
+        padding: 5px 50px 5px 15px;
+        font-size: 1.8rem;
+    }
+    #email{
+        margin-top: 60px;
+    }
+    #cpf{
+        margin-top: 120px;
+    }
+    #senha{
+        margin-top: 180px;
+    }
+    #confirmacaoSenha{
+        margin-top: 240px;
+    }
+
+    .botao-registro {
+        top: 850px;
+        left: 480px;
+    }
+}
+@media (max-width: 540px){
+    .imgdeFundo {
+        margin-top: -100px;
+        margin-left: 30px;
+        width: 500px;
+        height: auto;
+    }
+    #nome, 
+    #email, 
+    #cpf, 
+    #senha, 
+    #confirmacaoSenha {
+        left: -25px;
+        top:470px;
+
+    }
+
+    .titulo p{
+        top: 300px;
+        left: 130px;
+    }
+
+    .botao-registro {
+        top: 770px;
+        left: 373px;
+    }
+}
+
+@media (max-width: 425px){
+    .imgdeFundo {
+        margin-left: 0px;
+        margin-top: -75px;
+        width: 450px;
+        height: auto;
+    }
+    #nome, 
+    #email, 
+    #cpf, 
+    #senha, 
+    #confirmacaoSenha {
+        left: -76px;
+        top:420px;
+        font-size: 1.4rem;
+        padding: 3px 89px 3px 20px;
+    }
+
+    .titulo p{
+        top: 280px;
+        left: 100px;
+        font-size: 4rem;
+    }
+
+    .botao-registro {
+        top: 720px;
+        left: 320px;
+    }
+}
+
+@media (max-width: 375px){
+    .imgdeFundo {
+        margin-top: -50px;
+        width: 380px;
+        height: auto;
+    }
+    #nome, 
+    #email, 
+    #cpf, 
+    #senha, 
+    #confirmacaoSenha {
+        top: 390px;
+        left: -100px;
+    }
+
+    .titulo p{
+        top: 245px;
+        left: 70px;
+    }
+
+    .botao-registro {
+        top: 690px;
+        left: 295px;
+    }
+}
+
+@media (max-width: 320px){
+    .imgdeFundo {
+        width: 330px;
+        height: auto;
+    }
+    .form{
+        width: 768px;
+        
+    }
+    #nome, 
+    #email, 
+    #cpf, 
+    #senha, 
+    #confirmacaoSenha {
+        top: 320px;
+        left: -105px;
+        padding: 3px 50px 3px 15px;
+    }
+
+    .titulo p{
+        left: 50px;
+        top: 188px;
+    }
+
+    .botao-registro {
+        top: 610px;
+        left: 245px;
+    }
 }
 }

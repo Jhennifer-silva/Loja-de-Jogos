@@ -6,53 +6,51 @@
     margin: 0;
     overflow:visible;
     position: fixed;
-    top: 0;
-    left: 0;
 
-.imgdeFundo {
-    position: absolute;
-    top: -160px;
-    width: 1124px;
-    height: 1124px;
-    left:475px;
-    right: 0px;
-}
+    .imgdeFundo {
+        margin-left: 33%;
+        margin-top: -145px;
+        width: 1224px;
+        height: auto;
+    }
 
-.titulo {
-    color: #4B626C;
-    padding: 25px;
-    margin-left: -82px;
-    margin-bottom: 10px;
-    font-size: 50px;
-    text-align: center;
-}
+    .titulo p {
+        position: absolute;
+        color: #4B626C;
+        padding: 25px;
+        left: 60px;
+        top: 0px;
+        font-size: 6.4rem;
+        text-align: center;
+    }
 
-.form input {
-    margin-top: 45px;
-}
+    .form{
+        display: flex;
+        width: 475px;
+        z-index: 1000;
+    }
 
 #email {
     background-color: #EFEFEF;
+    position: absolute;
     color: #97A4A2;
     border: #fbf8f4;
-    padding: 5px 5px 5px 20px;
-    margin-left: 42px;
+    padding: 8px 50px 8px 10px;
+    left: 82px;
     box-shadow: 0 4px 20px #00000040;
-    display: block;
-    width: 335px;
-    height: 30px;
     border-radius: 5px;
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 2.4rem;
     line-height: 29.26px;
+    top: 275px;
 }
 
 .botao-recuperacao {
+    position: absolute;
     background-color: transparent;
     border: none;
     font-size: 30px;
-    margin-top: 30px;
-    margin-left: 500px;
+    top: 360px;
+    left: 394px;
     color: #4B626C;
     cursor: pointer;
 }
@@ -67,9 +65,8 @@
 }
 
 #telas {
-    background-color: #FBF8F4;
     padding: 50px;
-    position: fixed;
+    position: absolute;
     bottom: -15px;
     left: 0;
     font-size: 20px;
@@ -85,5 +82,153 @@
 
 #telas a:hover {
     color: #4B626C;
+}
+@media (max-width: 1100px){
+    .imgdeFundo {
+        margin-left: 350px;
+        width: 900px;
+        height: auto;
+    }
+
+    #email{
+    padding: 5px 5px 5px 10px;
+    font-size: 2.1rem;
+    }
+
+    #senha{
+        margin-top: 76px;
+    }
+
+    .botao-recuperacao {
+        top: 350px;
+        left: 330px;
+    }
+
+    .titulo p{
+        left: 36px;
+    }
+}
+@media (max-width: 768px){
+    .imgdeFundo {
+        margin-top: -150px;
+        margin-left: 70px;
+        width: 650px;
+        height: auto;
+    }
+    .titulo p{
+        top: 380px;
+        left: 190px;
+    }
+    .form{
+        width: 768px;
+    }
+    #email{
+        margin-left: 150px;
+        top: 650px;
+        padding: 5px 50px 5px 15px;
+        font-size: 1.8rem;
+    }
+
+
+    .botao-recuperacao {
+        top: 710px;
+        left: 480px;
+    }
+}
+@media (max-width: 540px){
+    .imgdeFundo {
+        margin-top: -100px;
+        margin-left: 30px;
+        width: 500px;
+        height: auto;
+    }
+    #email{
+        left: -25px;
+        top:560px;
+    }
+
+    .titulo p{
+        top: 280px;
+        left: 80px;
+    }
+
+    .botao-recuperacao {
+        top: 620px;
+        left: 373px;
+    }
+}
+
+@media (max-width: 425px){
+    .imgdeFundo {
+        margin-left: 0px;
+        margin-top: -75px;
+        width: 450px;
+        height: auto;
+    }
+    #email{
+        left: -76px;
+        top: 490px;
+        font-size: 1.4rem;
+        padding: 5px 89px 5px 20px;
+    }
+
+    .titulo p{
+        left: 90px;
+        top: 290px;
+        font-size: 4rem;
+    }
+
+    .botao-recuperacao {
+        top: 550px;
+        left: 320px;
+    }
+}
+
+@media (max-width: 375px){
+    .imgdeFundo {
+        margin-top: -50px;
+        width: 380px;
+        height: auto;
+    }
+    #email{
+        top: 450px;
+        left: -100px;
+    }
+
+    .titulo p{
+        top: 250px;
+        left: 60px;
+    }
+
+    .botao-recuperacao {
+        top: 510px;
+        left: 295px;
+    }
+}
+
+@media (max-width: 320px){
+    .imgdeFundo {
+        width: 330px;
+        height: auto;
+    }
+    .form{
+        width: 768px;
+        
+    }
+    #email {
+        left: -105px;
+        top: 390px;
+        padding: 5px 50px 5px 15px;
+    }
+
+    .titulo p{
+        left: 30px;
+        top: 200px;
+    }
+
+    .botao-recuperacao {
+        top: 450px;
+        left: 245px;
+    }
 }
 }
