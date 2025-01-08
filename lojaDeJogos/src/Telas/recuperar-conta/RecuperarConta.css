@@ -10,20 +10,21 @@
     left: 0;
 
 .imgdeFundo {
-    position: fixed;
-    top: -200px;
-    width: 1224px;
-    height: 1224px;
-    left: 700px;
+    position: absolute;
+    top: -160px;
+    width: 1124px;
+    height: 1124px;
+    left:475px;
     right: 0px;
 }
 
 .titulo {
     color: #4B626C;
     padding: 25px;
-    margin-left: 200px;
+    margin-left: -82px;
     margin-bottom: 10px;
     font-size: 50px;
+    text-align: center;
 }
 
 .form input {
@@ -35,18 +36,15 @@
     color: #97A4A2;
     border: #fbf8f4;
     padding: 5px 5px 5px 20px;
-    margin-left: 180px;
+    margin-left: 42px;
     box-shadow: 0 4px 20px #00000040;
     display: block;
     width: 335px;
     height: 30px;
-    left: 56px;
     border-radius: 5px;
     font-size: 24px;
     font-weight: 300;
     line-height: 29.26px;
-    text-align: left;
-    outline: none;
 }
 
 .botao-recuperacao {

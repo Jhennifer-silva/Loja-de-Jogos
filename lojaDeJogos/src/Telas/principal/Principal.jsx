@@ -102,7 +102,7 @@ function Lancamentos() {
                 </Link>
                 <ul className="nav-links">
                     <a href="#lancamentos">Lançamentos</a>
-                    <a href="#">Populares</a>
+                    <a href="/populares">Populares</a>
                     <a href="#">Gêneros</a>
                     <a href="#Promocoes">Promoções</a>
                     <a href="/conta">Conta</a>
@@ -155,7 +155,7 @@ function Lancamentos() {
                 <div className="othersPages">
                     <h3>Explorar</h3>
                     <a href="#navBar">início</a>
-                    <a href="#">Populares</a>
+                    <a href="/populares">Populares</a>
                     <a href="/conta">Conta</a>
                 </div>
                 <div className="infos">

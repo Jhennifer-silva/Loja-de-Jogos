@@ -62,7 +62,7 @@
 
 .pesquisa-container i {
     position: absolute;
-    right: 75px;
+    left: 1430px;
     transform: translateY(-50%);
     color: #4B626C;
     font-size: 25px;
@@ -71,8 +71,6 @@
   .rodape{
     background-color: #97A4A2;
     position: absolute;
-    bottom: 0px;
-    top: 1073px;
     height: 393px;
     width: 100%;
     display: flex;

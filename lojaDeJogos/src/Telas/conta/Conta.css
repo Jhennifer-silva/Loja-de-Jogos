@@ -9,34 +9,35 @@
       #titulo{
         position: absolute;
         color: #FBF6F0;
-        width: 280px;
-        font-size: 40px;
+        width: 300px;
+        font-size: 32px;
         line-height: 39.01px;
-        top: 0px;
+        top: 53px;
         left: 100px;
     }
     #carrinhodecompras{
         position: absolute;
         z-index: 1;
-        top: 700px;
-        left: 700px;
+        top: 800px;
+        left: 538px;
         width: 100px;
         height: auto;
     }
       .jogos { 
         background-color: #4B626C; 
-        padding: 150px 160px;
         position: absolute; 
         left: 55%; 
-        height: 545px; 
-        width: 526px; 
-        max-width: 40%;
+        height: 922px; 
+        width: 1000px; 
+        max-width: 45%;
     }
     
     .grid { 
         display: grid; 
         grid-template-columns: repeat(auto-fill, 200px); 
-        gap: 50px 80px; 
+        gap: 80px 80px; 
+        margin-top: 160px;
+        margin-left: 100px;
     }
     
     .grid-item { 
@@ -45,11 +46,12 @@
     
     .grid-item img { 
         object-fit: cover; 
-        border-radius: 5px; 
+        border-radius: 2px; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         transition: transform 0.3s; 
-        width: 100%; 
-        height: auto; 
+        
+        width: 190px; 
+        height: auto;
         cursor: pointer;
     }
     
@@ -61,7 +63,7 @@
         position: absolute; 
         top: 250px;
         left: 0px; 
-        background-color: rgba(0, 0, 0, 0.7); 
+        background-color: #fbf6f028; 
         color: #FBF6F0; 
         padding: 5px; 
         border-radius: 5px; 
@@ -71,21 +73,16 @@
     .avaliacao:hover{
         transform: scale(1.05);
     }
-        .infos h2{
+    .infos h2{
         font-weight: 600;
     }
 
     .configs{
     color: #4B626C;
-    margin-left: 130px;
-    margin-top: 165px;
-    font-family: Montserrat;
+    margin-left: 112px;
+    margin-top: 265px;
     font-size: 32px;
     font-weight: 500;
-    line-height: 58.51px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     }
 
     button{

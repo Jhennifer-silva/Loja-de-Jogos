@@ -18,7 +18,7 @@ function Conta({dadosUsuario}) {
                 </Link>
                 <ul className="nav-links">
                 <a href="principal#lancamentos">Lançamentos</a> 
-                <a href="#">Populares</a> 
+                <a href="/populares">Populares</a> 
                 <a href="#">Gêneros</a> 
                 <a href="principal#promocoes">Promoções</a> 
                 <a href="/conta">Conta</a>
