@@ -10,6 +10,7 @@ import jogo6 from '../../assets/principal/jogo6.png';
 import jogo7 from '../../assets/principal/jogo7.png';
 import jogo8 from '../../assets/principal/jogo8.png';
 import jogo9 from '../../assets/principal/jogo9.png';
+import carrinho from'../../assets/carrinho.png';
 import jogoLanc1 from '../../assets/principal/jogoLanc1.png';
 import jogoLanc2 from '../../assets/principal/jogoLanc2.png';
 import jogoLanc3 from '../../assets/principal/jogoLanc3.png';
@@ -143,6 +144,7 @@ function Lancamentos() {
                     </div>
                     ))}
                 </div>
+                <img src={carrinho} alt="Carrinho de compra" id="carrinhodecompras"/>
             </div>
             <footer className="rodape">
                 <div className='propag'>

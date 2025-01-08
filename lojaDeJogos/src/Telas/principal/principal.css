@@ -15,19 +15,19 @@
         height: auto;
         position: absolute;
         top: 175px;
-        left: 516px;
+        right: 136px;
     }
 
     #jogo1, #jogo4, #jogo7{
         position: absolute;
-        left: 110px;
+        left: 136px;
         top: 404px;
         width: 406px;
         height: 229.56px;
     }
     #jogo2, #jogo5, #jogo8{
         position: absolute;
-        left: 110px;
+        left: 136px;
         top: 175px;
         width: 406px;
         height: 229.56px;
@@ -38,7 +38,7 @@
         width: 90px;
         height: 19.13px;
         top:350.43px;
-        left: 124px;
+        left: 156px;
         font-size: 16px;
         font-weight: 600;
         line-height: 19.5px;
@@ -62,7 +62,7 @@
         width: 90px;
         height: 19.13px;
         top:580.43px;
-        left: 124px;
+        left: 156px;
         font-size: 16px;
         font-weight: 600;
         line-height: 19.5px;
@@ -86,7 +86,7 @@
         max-width: 90px;
         height: 19.13px;
         top:580.43px;
-        left: 1113px;
+        left: 1163px;
         font-size: 16px;
         font-weight: 600;
         line-height: 19.5px;
@@ -193,7 +193,7 @@
     
     .imagensLancamentos {
         position: absolute;
-        left: 130px;
+        left: 105px;
         top: 50px;
         display: flex;
     }
@@ -226,6 +226,15 @@
     #esquerdaLanc:hover,
     #direitaLanc:hover {
         transform: scale(1.1) translateY(-50%);
+    }
+
+    #carrinhodecompras{
+        position: absolute;
+        top: 230px;
+        left: 1351px;
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
     }
     
     .rodape{
