@@ -1,128 +1,275 @@
 .telaConta {
-    overflow:auto;
-    display: block;
     padding: 0;
+    margin: 0;
     background-color: #FBF6F0;
     font-family: Montserrat;
-    margin: 0;
+}
 
-      #titulo{
-        position: absolute;
-        color: #FBF6F0;
-        width: 300px;
-        font-size: 32px;
-        line-height: 39.01px;
-        top: 53px;
-        left: 100px;
-    }
-    #carrinhodecompras{
-        position: absolute;
-        z-index: 1;
-        top: 800px;
-        left: 538px;
-        width: 100px;
-        height: auto;
-    }
-      .jogos { 
-        background-color: #4B626C; 
-        position: absolute; 
-        left: 55%; 
-        height: 922px; 
-        width: 1000px; 
-        max-width: 45%;
-    }
-    
-    .grid { 
-        display: grid; 
-        grid-template-columns: repeat(auto-fill, 200px); 
-        gap: 80px 80px; 
-        margin-top: 160px;
-        margin-left: 100px;
-    }
-    
-    .grid-item { 
-        position: relative; 
-    }
-    
-    .grid-item img { 
-        object-fit: cover; 
-        border-radius: 2px; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-        transition: transform 0.3s; 
-        
-        width: 190px; 
-        height: auto;
-        cursor: pointer;
-    }
-    
-    .grid-item img:hover { 
-        transform: scale(1.05); /* Aumenta a imagem levemente no hover */ 
-    }
-    
-    .avaliacao { 
-        position: absolute; 
-        top: 250px;
-        left: 0px; 
-        background-color: #fbf6f028; 
-        color: #FBF6F0; 
-        padding: 5px; 
-        border-radius: 5px; 
-        cursor: pointer;
-    }
+.telaConta #titulo {
+    position: absolute;
+    color: #FBF6F0;
+    width: 300px;
+    font-size: 32px;
+    line-height: 39.01px;
+    top: 53px;
+    left: 100px;
+}
 
-    .avaliacao:hover{
-        transform: scale(1.05);
-    }
-    .infos h2{
-        font-weight: 600;
-    }
+.telaConta .jogos {
+    background-color: #4B626C;
+    position: absolute;
+    left: 55%;
+    height: 100vh;
+    width: 100vw;
+    max-width: 45%;
+}
 
-    .configs{
+.telaConta #carrinhodecompras {
+    position: relative;
+    left: 80%;
+    margin-top: 50px;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.telaConta .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 80px 80px;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+
+.telaConta .grid-item {
+    position: relative;
+}
+
+.telaConta .grid-item img {
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 190px;
+    height: auto;
+    cursor: pointer;
+}
+
+.telaConta .grid-item img:hover {
+    transform: scale(1.05);
+}
+
+.telaConta .avaliacao {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    background-color: rgba(251, 246, 240, 0.16);
+    color: #FBF6F0;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.telaConta .avaliacao:hover {
+    transform: scale(1.05);
+}
+
+.telaConta .infos h2 {
+    font-weight: 600;
+}
+
+.telaConta .configs {
+    width: 55%;
     color: #4B626C;
-    margin-left: 112px;
-    margin-top: 265px;
+    margin-left: 60px;
+    margin-top: 200px;
     font-size: 32px;
     font-weight: 500;
-    }
+}
 
-    button{
-        background-color: #4B626C;
-        color: #FBF6F0;
-        border-radius: 10px;
-        border: none;
-        padding: 5px 10px 15px 20px;
-        width: 270px;
-        height: 45px;
-        top: 640px;
-        left: 112px;
-        font-size: 30px;
+.telaConta button {
+    display: flex;
+    gap: 30px;
+    background-color: #4B626C;
+    color: #FBF6F0;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    width: 270px;
+    height: 45px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.telaConta button:hover {
+    background-color: rgba(151, 164, 162, 0.45);
+}
+
+.telaConta #admin {
+    background-color: rgba(151, 164, 162, 0.45);
+}
+
+.telaConta #admin:hover {
+    background-color: #4B626C;
+}
+
+.telaConta .jogos i {
+    margin-left: 100px;
+}
+
+@media (max-width: 1290px) {
+    .telaConta .jogos {
+        height: auto;
+        min-height: 1550px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .telaConta .configs {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .telaConta button {
+        font-size: 20px;
+        width: 190px;
+    }
+}
+
+@media (max-width: 888px) {
+    .telaConta .grid {
+        margin-left: 50px;
+    }
+    .telaConta #titulo {
+        left: 30px;
+    }
+}
+
+@media (max-width: 832px) {
+    .telaConta #carrinhodecompras {
+        left: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .telaConta .jogos {
+        display: grid;
+        left: 0;
+        top: 451px;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        min-height: 1550px;
+    }
+    .telaConta .configs {
+        text-align: center;
+        width: 100%;
+        margin: 44px auto 10px;
+        font-size: 20px;
         font-weight: 400;
-        line-height: 36.57px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        display: block;
-        margin-bottom: 50px;
+    }
+
+    .telaConta button {
+        display: flex;
+        flex-direction: column 0;
+        gap: 30px;
+        margin-left: 10px;
+        margin: 3px auto;
+        width: 195.71px;
+        height: 33px;
+        font-size: 20px;
         align-items: center;
-        margin-right: 10px;
-        transition: 0.3s;
-        cursor: pointer;
+        top: 640px;
+    }
+    .telaConta .grid {
+        margin: 150px 144px; /* Centraliza o grid horizontalmente */
+        text-align: center;
+    }
+    .telaConta #titulo {
+        top: 10px;
+        left:50px;
+    }   
+    .telaConta #carrinhodecompras {
+        bottom: 200px;
+        margin: 0px 10px;
+    }
+}
+@media (max-width: 425px) {
+    .telaConta .jogos {
+        display: grid;
+        left: 0;
+        top: 451px;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        min-height: 1550px;
+    }
+    .telaConta .configs {
+        text-align: center;
+        width: 100%;
+        margin: 44px auto 10px;
+        font-size: 20px;
+        font-weight: 400;
     }
 
-    button:hover{
-        background-color: #97A4A273;
+    .telaConta button {
+        display: flex;
+        flex-direction: column 0;
+        gap: 30px;
+        margin-left: 10px;
+        margin: 3px auto;
+        width: 195.71px;
+        height: 33px;
+        font-size: 20px;
+        align-items: center;
+        top: 640px;
     }
-    
-    #admin{
-        background-color: #97A4A273;
+    .telaConta .grid {
+        margin: 150px 144px;
+        text-align: center;
     }
-
-    #admin:hover{
-        background-color: #4B626C;
+    .telaConta #titulo {
+        top: 10px;
+        left:50px;
+    }   
+    .telaConta #carrinhodecompras {
+        bottom: 200px;
+        margin: 0px 10px;
     }
-
-    .jogos i{
-        margin-left: 100px;
+    .telaConta #titulo {
+        font-size: 32px;
     }
-    
+}
+@media (max-width: 425px) {
+    .telaConta #carrinhodecompras {
+        bottom: 150px;
+        left: 65%;
+    }
+    .telaConta .grid {
+        margin: 150px 120px;
+        text-align: center;
+    }
+}
+@media (max-width: 375px) {
+    .telaConta #carrinhodecompras {
+        bottom: 100px;
+        left: 62%;
+    }
+    .telaConta .grid {
+        margin: 150px 90px;
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    .telaConta #carrinhodecompras {
+        bottom: 100px;
+        left: 60%;
+    }
+    .telaConta .grid {
+        margin: 150px 62px;
+        text-align: center;
+    }
 }

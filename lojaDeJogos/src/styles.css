@@ -22,7 +22,6 @@
     line-height: 39.01px;
     text-align: left;
     text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -34,11 +33,10 @@
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: #4B626C;
     padding: 15px 25px 15px 10px;
-    border-left: none;
     border-right: 1px solid #4B626C;
     transition: 0.5s;
+    color: #4B626C;
 }
 
 .navbar .nav-links a:last-child {
@@ -172,5 +170,239 @@ padding: 0px 10px;
 #criador{
     border-left: 1px solid #4B626C;
     height: 30px;
+}
+
+@media (max-width:1387px) {
+    .navbar .nav-links {
+        font-size: 20px;
+    }
+    .pesquisa-container i {
+        left: 960px;
+        transition: 0.5s;
+    }
+      .navbar .nav-links a {
+        padding: 15px 15px 15px 0px;
+    }
+}
+@media (max-width:1000px) {
+    .navbar .nav-links {
+        font-size: 16px;
+    }
+    .pesquisa-container i {
+        left: 765px;
+        transition: 0.5s;
+    }
+      .navbar .nav-links a {
+        padding: 0px 15px 15px 0px;
+        height: 20px;
+    }
+    .icone{
+    margin-left: 0px;
+    }
+    #pesquisa{
+        width: 130px;
+    }
+}
+
+@media (max-width:802px) {
+    .navbar .nav-links {
+        font-size: 14px;
+    }
+    .pesquisa-container i {
+        left: 720px;
+    }
+    #pesquisa{
+        top: 66px;
+        height:40px;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-links a, 
+    .pesquisa-container i, 
+    #pesquisa{
+        display: none;
+    }
+    
+    .icone{
+        margin-left: 30px;
+    }
+    
+}
+
+@media (max-width:768px){
+    .nav-links, 
+    .pesquisa-container{
+         display: none;
+    }
+        
+    .icone{
+            margin-left: 30px;
+    }
+    .menuUm,
+    .menuDois,
+    .menuTres{
+        background-color: #4B626C;
+        height: 7px;
+        width: 74px;
+        margin-bottom: 17px;
+        border-radius: 2px;
+    }
+
+    .menu-sand{
+        position: fixed;
+        right: 90px;
+        background-color: transparent;
+        display: block;
+        margin-top: 15px;
+        z-index: 1000;
+        transition: 0.5s;
+    }
+
+    .navbar.on {
+        overflow: visible;
+        position: absolute;
+        top:0;
+        left:0;
+        
+        width: 100%;
+        height: 100%;
+        
+
+        background: linear-gradient(to bottom, #4B626C 460px, #66666666 0% );
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body.no-scroll {
+        overflow: hidden;
+    }
+    .navbar.on .icone{
+        display: none;
+    }
+
+    .navbar.on .menuUm,
+    .navbar.on .menuDois,
+    .navbar.on .menuTres{
+        background-color: #ffffff;
+    }
+
+    .navbar.on .menu-sand {
+        position: absolute;
+        right: 90px;
+        top: 15px;
+    }
+
+    .navbar.on .menu-sand .menuUm {
+        transform: rotate(45deg) translate(25px, 7px);
+    }
+
+    .navbar.on .menu-sand .menuDois {
+        opacity: 0;
+    }
+
+    .navbar.on .menu-sand .menuTres {
+        transform: rotate(-45deg) translate(25px, -9px);
+    }
+
+    .navbar.on .nav-links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+       top: 65px;
+       left: 50%;
+       transform: translateX(-50%); 
+    }
+    
+    .navbar.on .nav-links a {
+        text-align: center;
+        color: #ffffff;
+        transition-duration: 0.5s;
+        font-size: 2.4rem;
+        display: block;
+        border-bottom: 1px solid #ffffff;
+        padding: 0px 0px 30px;
+    }
+
+    .navbar .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar.on .nav-links a:hover {
+        color: #97A4A2;
+    }
+
+    .navbar.on #pesquisa {
+        text-align: center;
+        align-items: center;
+        display: block;
+        position: absolute;
+        
+        top: 400px;
+        width: 271px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 3px 6px #181717bb;
+        font-size: 2.4rem;
+        color: #ffffff;
+    }
+
+    .navbar.on .pesquisa-container {
+        left: 31.5%;
+        align-items: center;
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 10px;
+        transform: translateY(-50%);
+        color: #97a4a2;
+        font-size: 25px;
+    }
+
+    .navbar.on .pesquisa-container i {
+        display: block;
+        position: absolute;
+        max-width: 100%;
+        left: 255px;
+        top: 396px;
+        transform: translateY(-50%);
+        color: #000000;
+        font-size: 25px;
+    }
+}
+@media (max-width:425px) {
+    .navbar.on .menu-sand {
+        right: 60px;
+    }
+    .menu-sand {
+        right: 20px;
+    }
+    .navbar.on .pesquisa-container {
+        left: 15%;
+    }
+    .navbar.on .nav-links{
+       left: 46%;
+       transform: translateX(-50%); 
+    }
+    
+    
+}
+@media (max-width:325px) {
+    .navbar.on .menu-sand {
+        top: 0px;
+        right: 55px;
+    }
+    .menu-sand {
+        right: 40px;
+    }
+    .navbar.on .pesquisa-container {
+        left: 5%;
+    }
+
 }
 
