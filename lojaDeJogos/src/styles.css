@@ -1,30 +1,38 @@
+/*NAV BAR*/
 .icone{
     margin-left: 30px;
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 
 .navbar {
     display: flex;
     position: sticky;
+    gap: 10px;
     top: 0px;
     align-items: center;
     background-color: #FBF6F0;
     padding: 10px 20px;
     box-shadow: 0 4px 8px #181717bb;
     z-index: 1000;
+    box-sizing: border-box;
 }
 .navbar .nav-links {
+    width: 100%;
     display: flex;
-    gap: 15px;
-    font-size: 32px;
+    gap: auto;
+    padding: 10px;
+    justify-content:center;
+    margin-right: min(1000px);
+    font-size: clamp(20px, 1.7vw, 32px);
     font-weight: 300;
     line-height: 39.01px;
-    text-align: left;
-    text-underline-position: from-font;
+    text-align: center;
+    right: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
+    height: 50px;
 }
 
 .navbar a:hover {
@@ -33,7 +41,7 @@
 
 .navbar .nav-links a {
     text-decoration: none;
-    padding: 15px 25px 15px 10px;
+    padding: 4px 25px 0px 10px;
     border-right: 1px solid #4B626C;
     transition: 0.5s;
     color: #4B626C;
@@ -42,36 +50,45 @@
 .navbar .nav-links a:last-child {
     border-right: none;
 }
-
+.pesquisa-container{
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px #181717bb;
+    background-color: #97A4A273;
+}
 #pesquisa{
     background-color: #97A4A273;
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    margin-top: -25px;
-    margin-left: 0px;
-    border-radius: 15px;
+    width: 165px;
+    min-width: 10px;
+    height: auto;
+    min-height: 10px;
+    margin-top: 0px;
+    right: 20px;
     border: none;
-    box-shadow: 0 3px 6px #181717bb;
     outline: none;
-    padding-left: 20px;
-    font-size: 32px;
+    padding-right:50px ;
+    font-size:32px;
 }
 
 .pesquisa-container i {
     position: absolute;
-    left: 1350px;
+    text-align: right;
+    right: 35px;
+    margin-top: -20px;
     transform: translateY(-50%);
     color: #4B626C;
     font-size: 25px;
   }
 
+/*FOOTER*/
   .rodape{
     background-color: #97A4A2;
     position: absolute;
     height: 393px;
     width: 100%;
     display: flex;
+    padding: auto;
 }
 
 .iconeRodape{
@@ -89,7 +106,6 @@
     left: 232px;
     font-size: 36px;
     font-weight: 700;
-    text-align: left;
     color: #FBF8F3;
 }
 #slogan{
@@ -110,8 +126,8 @@
     color: #FBF8F3;
     font-size: 32px;
     text-align: center;
-    margin-left: 644px;
-    margin-top: 50px;
+    align-items: center;
+    margin: 50px auto;
 }
 
 .othersPages a{
@@ -136,7 +152,7 @@
     position: absolute;
     font-size: 24px;
     top: 60px;
-    left: 1022px;
+    right: 60px;
 }
 .infos h3{
     font-size: 36px;
@@ -154,10 +170,9 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 100%;
     height: 60px;
-    left: 489px;
-
+    align-items: center;
 }
 
 .creditos p{
@@ -172,22 +187,8 @@ padding: 0px 10px;
     height: 30px;
 }
 
-@media (max-width:1387px) {
-    .navbar .nav-links {
-        font-size: 20px;
-    }
-    .pesquisa-container i {
-        left: 960px;
-        transition: 0.5s;
-    }
-      .navbar .nav-links a {
-        padding: 15px 15px 15px 0px;
-    }
-}
+/*RESPONSIVIDADE NAVBAR*/
 @media (max-width:1000px) {
-    .navbar .nav-links {
-        font-size: 16px;
-    }
     .pesquisa-container i {
         left: 765px;
         transition: 0.5s;
@@ -217,23 +218,11 @@ padding: 0px 10px;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:768px){
     .nav-links a, 
     .pesquisa-container i, 
     #pesquisa{
         display: none;
-    }
-    
-    .icone{
-        margin-left: 30px;
-    }
-    
-}
-
-@media (max-width:768px){
-    .nav-links, 
-    .pesquisa-container{
-         display: none;
     }
         
     .icone{
@@ -267,13 +256,14 @@ padding: 0px 10px;
         
         width: 100%;
         height: 100%;
-        
 
         background: linear-gradient(to bottom, #4B626C 460px, #66666666 0% );
+        box-shadow: none;
 
         z-index: 10;
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -292,8 +282,8 @@ padding: 0px 10px;
 
     .navbar.on .menu-sand {
         position: absolute;
-        right: 90px;
-        top: 15px;
+        right: 40px;
+        top: 20px;
     }
 
     .navbar.on .menu-sand .menuUm {
@@ -305,27 +295,27 @@ padding: 0px 10px;
     }
 
     .navbar.on .menu-sand .menuTres {
-        transform: rotate(-45deg) translate(25px, -9px);
+        transform: rotate(-45deg) translate(27px, -9px);
     }
 
     .navbar.on .nav-links{
-        position: absolute;
         display: flex;
         flex-direction: column;
         color: #ffffff;
-       top: 65px;
-       left: 50%;
-       transform: translateX(-50%); 
+       margin-top: -500px;
+       width:auto;
     }
     
     .navbar.on .nav-links a {
         text-align: center;
+        display:flex;
+        flex-direction: column;
         color: #ffffff;
         transition-duration: 0.5s;
         font-size: 2.4rem;
-        display: block;
         border-bottom: 1px solid #ffffff;
-        padding: 0px 0px 30px;
+        padding: 5px 0px 25px 0px;
+        width: auto;
     }
 
     .navbar .nav-links a:last-child {
@@ -335,13 +325,23 @@ padding: 0px 10px;
     .navbar.on .nav-links a:hover {
         color: #97A4A2;
     }
+    .navbar.on .pesquisa-container {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        color: #97a4a2;
+        font-size: 25px;
+        margin-top:initial;
+        top:130px;
+        bottom: 50px;
+    }
 
     .navbar.on #pesquisa {
         text-align: center;
         align-items: center;
         display: block;
-        position: absolute;
-        
         top: 400px;
         width: 271px;
         height: 40px;
@@ -352,49 +352,34 @@ padding: 0px 10px;
         color: #ffffff;
     }
 
-    .navbar.on .pesquisa-container {
-        left: 31.5%;
-        align-items: center;
-        text-align: center;
-        display: block;
-        position: absolute;
-        top: 10px;
-        transform: translateY(-50%);
-        color: #97a4a2;
-        font-size: 25px;
-    }
 
     .navbar.on .pesquisa-container i {
         display: block;
-        position: absolute;
         max-width: 100%;
-        left: 255px;
-        top: 396px;
-        transform: translateY(-50%);
+        position: absolute;
+        left: initial;
+        margin-right: -20px;
+        margin-bottom: -45px;
         color: #000000;
         font-size: 25px;
     }
 }
 @media (max-width:425px) {
     .navbar.on .menu-sand {
-        right: 60px;
+        right: 10px;
     }
     .menu-sand {
-        right: 20px;
+        right:40px;
+    }
+    .icone{
+        margin-left: 0px;
     }
     .navbar.on .pesquisa-container {
-        left: 15%;
+        width: 200px;
     }
-    .navbar.on .nav-links{
-       left: 46%;
-       transform: translateX(-50%); 
-    }
-    
-    
 }
 @media (max-width:325px) {
     .navbar.on .menu-sand {
-        top: 0px;
         right: 55px;
     }
     .menu-sand {
@@ -404,5 +389,66 @@ padding: 0px 10px;
         left: 5%;
     }
 
+}
+
+/*RESPONSIVIDADE FOOTHER*/
+@media (max-width:1100px){
+    .othersPages {
+        display: none;
+    }
+    .infos{
+        font-size: 18px;
+        right: 30px;
+    }
+    #nomeSite{
+        font-size: 24px;
+    }
+    #slogan{
+        font-size: 24px;
+        width: 250px;
+    }
+    @media (max-width:730px){
+        .othersPages {
+            display: none;
+        }
+        .infos{
+            font-size: 16px;
+            right: 30px;
+            top: 110px;
+            line-height: 19.5px;
+        }
+        .infos h3{
+            display: none;
+        }
+        #nomeSite{
+            display: none;
+        }
+        #slogan{
+            display: none;
+        }
+        .iconeRodape{
+            width: 110px;
+            height: auto;
+        }
+        .creditos p{
+            font-size: 16px;
+        }
+    }
+    @media (max-width:375px){
+        .rodape{
+            height: 250px;
+        }
+        .infos{
+            top: 50px;
+            text-align: center;
+        }
+        .iconeRodape{
+            display: none;
+        }
+        .creditos p{
+            font-size: 12px;
+        }
+    }
+    
 }
 
