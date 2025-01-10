@@ -8,145 +8,331 @@
 
     .tituloPop{
         color: #4B626C;
-        font-size: 36px;
+        font-size: 3.6rem;
         font-weight: 700;
         position: absolute;
-        top: 132px;
+        top: 0px;
         left: 109px;
     }
+    .jogosPopulares{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .tituloJogo1,
+    .tituloJogo2,
+    .tituloJogo3{
+        color: #4B626C;
+        position: absolute;
+        font-size: 32px;
+        font-weight: 600;
+    }
 
-    .numJogo1, .numJogo2, .numJogo3 {
+    .numJogo1, 
+    .numJogo2, 
+    .numJogo3 {
         position: absolute;
         width: 50px;
         height: 50px;
         background-color: #4B626C;
         color: #FBF6F0;
         text-align: center;
-        font-size: 24px;
+        font-size: 2.4rem;
         border-radius: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1;
     }
-
-    .popular1 .img1{
-        position: absolute;
-        top: 238px;
-        left: 134px;
+    .popular1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        width: 100%;
+        max-width: 1380px;
+        text-align: center;
+      }
+      
+      .popular1 .img1 {
         width: 479px;
-        height: 282px;
-    }
-    .descricaoJogo1{
+        height: auto;
+        margin-right: 50px;
+        margin-left: min(134px)
+      }
+      .infoJogo1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+      }
+      .descricaoJogo1 {
         color: #4B626C;
-        width: 663px;
-        height: 285px;
-        position: absolute;
-        top: 285px;
-        left: 668px;
-        font-size: 20px;
+        font-size: clamp(12px, 1.7vw, 20px);
         font-weight: 300;
-        line-height: 24.38px;
-        text-align:justify;  
-    }
-
-    .tituloJogo1{
-        color: #4B626C;
-        position: absolute;
-        font-size: 32px;
+        line-height: 2.438rem;
+        text-align: justify;
+        width: auto;
+        margin-right: auto;
+        margin-right: min(134px);
+        margin-top: 60px;
+      }
+      
+      .tituloJogo1 {
+        font-size: 3.2rem;
         font-weight: 600;
-        line-height: 39.01px;
-        height: 39px;
-        top: 246px;
-        left: 907px;
-    }
+        top: 0px;
+        margin-left: -120px;
+      }
+      
+      .numJogo1 {
+        margin-top: -230px;
+        left: 110px;
+        font-size: 2rem;
+      }
+      
 
-    .numJogo1{
-        top: 205px;
-        left: 109.01px;
-    }
-
+    .popular2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        max-width: 1380px;
+        text-align: center;
+      }
     .popular2 .img2{
-        position: absolute;
-        top: 587px;
-        left: 852px;
         width: 479px;
         height: auto;
+        margin-left: 50px;
+        margin-right: min(134px)
     }
-    .descricaoJogo2{
+    .infoJogo2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+      }
+    .descricaoJogo2 {
         color: #4B626C;
-        width: 663px;
-        height: 285px;
-        position: absolute;
-        top: 632px;
-        left: 134px;
-        font-size: 20px;
+        font-size: clamp(12px, 1.7vw, 20px);
         font-weight: 300;
-        line-height: 24.38px;
-        text-align:justify;  
-    }
+        line-height: 2.438rem;
+        text-align: justify;
+        width: auto;
+        margin-left: auto;
+        margin-left: min(134px);
+        margin-top: 60px;
+      }
 
-    .tituloJogo2{
-        color: #4B626C;
-        position: absolute;
-        font-size: 32px;
+    .tituloJogo2 {
+        font-size: 3.2rem;
         font-weight: 600;
-        line-height: 39.01px;
-        height: 39px;
-        top: 593px;
-        left: 299px;
-    }
+        top: 0px;
+        margin-right: -130px;
+      }
 
-    .numJogo2{
-        top: 550px;
-        left: 827.01px;
-    }
+    .numJogo2 {
+        margin-top: -200px;
+        right: 110px;
+        font-size: 2rem;
+      }
 
-    .popular3 .img3{
-        position: absolute;
-        top: 933px;
-        left: 134px;
+      .popular3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        width: 100%;
+        max-width: 1380px;
+        text-align: center;
+        margin-bottom: min(300px);
+      }
+      
+      .popular3 .img3 {
         width: 479px;
         height: auto;
-    }
-    .descricaoJogo3{
+        margin-right: 50px;
+        margin-left: min(134px)
+      }
+      .infoJogo3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+      }
+      .descricaoJogo3 {
         color: #4B626C;
-        width: 663px;
-        height: 285px;
-        position: absolute;
-        top: 959px;
-        left: 668px;
-        font-size: 20px;
+        font-size: clamp(12px, 1.7vw, 20px);
         font-weight: 300;
-        line-height: 24.38px;
-        text-align:justify;  
-    }
-
-    .tituloJogo3{
-        color: #4B626C;
-        position: absolute;
-        font-size: 32px;
+        line-height: 2.438rem;
+        text-align: justify;
+        width: auto;
+        margin-right: auto;
+        margin-right: min(134px);
+        margin-top: 60px;
+      }
+      
+      .tituloJogo3 {
+        font-size: 3.2rem;
         font-weight: 600;
-        line-height: 39.01px;
-        height: 39px;
-        top: 920px;
-        left: 911px;
-    }
-
-    .numJogo3{
-        top: 897px;
-        left: 109.01px;
-    }
+        top: 0px;
+        margin-left: -120px;
+      }
+      
+      .numJogo3 {
+        left: 110px;
+        font-size: 2rem;
+        margin-top: -200px;
+      }
     
-    .rodape{
-        top: 1291px;
-    }
     #carrinhodecompras{
         position: absolute;
-        top: 1195px;
-        left: 1351px;
+        bottom: 10px;
+        right: 25px;
         width: 75px;
         height: 75px;
         cursor: pointer;
+    }
+
+    @media (max-width:1024px) {
+        .popular1 {
+            flex-direction: column;
+        }
+        .descricaoJogo1 {
+            font-size: 2rem;
+            margin-left: min(134px);
+            margin-right: min(134px);
+            margin-top: 60px;
+        }
+        .tituloJogo1 {
+            margin-top: 280px;
+            margin-left: -10px;
+        }
+        .popular1 .img1 {
+            margin-right: initial;
+            margin-left: initial;
+        }
+        .numJogo1 {
+            margin-top: initial;
+            top: -20px;
+            left: initial;
+            margin-left:-480px;
+          }
+          .popular2 {
+            flex-direction: column-reverse;
+        }
+        .descricaoJogo2 {
+            font-size: 2rem;
+            margin-left: min(134px);
+            margin-right: min(134px);
+            margin-top: 60px;
+        }
+        .tituloJogo2 {
+            margin-top: 280px;
+            margin-right: -10px;
+        }
+        .popular2 .img2 {
+            margin-right: initial;
+            margin-left: initial;
+        }
+        .numJogo2 {
+            margin-top: initial;
+            top: -20px;
+            right: initial;
+            margin-right:480px;
+          }
+          .popular3 {
+            flex-direction: column;
+        }
+        .descricaoJogo3 {
+            font-size: 2rem;
+            margin-left: min(134px);
+            margin-right: min(134px);
+            margin-top: 60px;
+        }
+        .tituloJogo3 {
+            margin-top: 280px;
+            margin-left: -10px;
+        }
+        .popular3 .img3 {
+            margin-right: initial;
+            margin-left: initial;
+        }
+        .numJogo3 {
+            margin-top: initial;
+            top: -20px;
+            left: initial;
+            margin-left:-480px;
+        }
+    }
+    @media (max-width:576px) {
+        .descricaoJogo1,
+        .descricaoJogo2,
+        .descricaoJogo3 {
+            font-size: 1.4rem;
+            margin-left: min(17px);
+            margin-right: min(17px);
+        }
+        .popular1 .img1,
+        .popular2 .img2,
+        .popular3 .img3 {
+            width: 332px;
+        }
+        .numJogo1,
+        .numJogo3 {
+            margin-left:-330px;
+        }  
+        .numJogo2 {
+            margin-right:330px;
+        }
+        .tituloJogo1,
+        .tituloJogo2,
+        .tituloJogo3 {
+            margin-top: 210px;
+            font-size: 1.6rem;
+        }
+    }
+    @media (max-width:425px) {
+        
+        .popular1 .img1,
+        .popular2 .img2,
+        .popular3 .img3 {
+            width: 329px;
+        }
+    }
+    @media (max-width:375px) {
+        .popular1 .img1,
+        .popular2 .img2,
+        .popular3 .img3 {
+            width: 250px;
+        }
+        .numJogo1,
+        .numJogo3 {
+            margin-left:-250px;
+            width: 38.42px;
+            height: 38.42px;
+        }  
+        .numJogo2 {
+            margin-right:250px;
+            width: 38.42px;
+            height: 38.42px;
+        }
+        .tituloJogo1,
+        .tituloJogo2,
+        .tituloJogo3 {
+            margin-top: 165px;
+            font-size: 1.6rem;
+        }
     }
 }
