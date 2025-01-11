@@ -46,22 +46,26 @@ function Login({dadosUsuario}) {
           <div className="titulo">
             <p>Login</p>
           </div>
-          <input 
-          type="email" 
-          id="email" 
-          placeholder="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          />
-          {erro.email ? <p className="erro">{erro.email}</p> : null}
-          <input 
-          type="password" 
-          id="senha" 
-          placeholder="Senha" 
-          value={senha}
-          onChange={(e) => setSenha(e.target.value)}
-          />
-          {erro.senha ? <p className="erro">{erro.senha}</p> : null}
+          <div className="formgroup">
+            <input 
+            type="email" 
+            id="email" 
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            />
+            {erro.email ? <p className="erro">{erro.email}</p> : null}
+          </div>
+          <div className="formgroup">
+            <input 
+            type="password" 
+            id="senha" 
+            placeholder="Senha" 
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+            />
+            {erro.senha ? <p className="erro">{erro.senha}</p> : null}
+          </div>
           <button className="botao-login" onClick={handleSubmit}>
             <i className="fas fa-arrow-right"></i>
           </button>

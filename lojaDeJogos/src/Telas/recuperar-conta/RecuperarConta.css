@@ -8,10 +8,13 @@
     position: fixed;
 
     .imgdeFundo {
-        margin-left: 33%;
-        margin-top: -145px;
-        width: 1224px;
-        height: auto;
+        position: fixed;
+    z-index: -10;
+    right: -200px;
+    top: 100px;
+    margin-top: -270px;
+    width: 1224px;
+    height: auto;
     }
 
     .titulo p {
@@ -25,7 +28,6 @@
     }
 
     .form{
-        display: flex;
         width: 475px;
         z-index: 1000;
     }
@@ -56,12 +58,11 @@
 }
 
 .erro {
-    position: absolute;
     background-color: transparent;
     color: red;
-    margin-left: 56px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    font-size: 1.6rem;
+    margin-left: 83px;
+    margin-top: 330px;
 }
 
 #telas {
@@ -83,9 +84,16 @@
 #telas a:hover {
     color: #4B626C;
 }
+
+@media (max-width: 1400px){
+    .imgdeFundo {
+        left: 380px;
+        height: auto;
+    }
+}
 @media (max-width: 1100px){
     .imgdeFundo {
-        margin-left: 350px;
+        left: 300px;
         width: 900px;
         height: auto;
     }
@@ -110,8 +118,8 @@
 }
 @media (max-width: 768px){
     .imgdeFundo {
-        margin-top: -150px;
-        margin-left: 70px;
+        margin-top: -250px;
+        left: 70px;
         width: 650px;
         height: auto;
     }
@@ -128,8 +136,10 @@
         padding: 5px 50px 5px 15px;
         font-size: 1.8rem;
     }
-
-
+    .erro {
+        margin-left: 232px;
+        margin-top: 700px;
+    }
     .botao-recuperacao {
         top: 710px;
         left: 480px;
@@ -137,8 +147,8 @@
 }
 @media (max-width: 540px){
     .imgdeFundo {
-        margin-top: -100px;
-        margin-left: 30px;
+        margin-top: -190px;
+        left: 30px;
         width: 500px;
         height: auto;
     }
@@ -156,12 +166,16 @@
         top: 620px;
         left: 373px;
     }
+    .erro {
+        margin-left: 125px;
+        margin-top: 605px;
+    }
 }
 
 @media (max-width: 425px){
     .imgdeFundo {
-        margin-left: 0px;
-        margin-top: -75px;
+        left: 0px;
+        margin-top: -175px;
         width: 450px;
         height: auto;
     }
@@ -182,11 +196,15 @@
         top: 550px;
         left: 320px;
     }
+    .erro {
+        margin-left: 75px;
+        margin-top: 535px;
+    }
 }
 
 @media (max-width: 375px){
     .imgdeFundo {
-        margin-top: -50px;
+        margin-top: -175px;
         width: 380px;
         height: auto;
     }
@@ -203,6 +221,10 @@
     .botao-recuperacao {
         top: 510px;
         left: 295px;
+    }
+    .erro {
+        margin-left: 50px;
+        margin-top: 495px;
     }
 }
 
@@ -229,6 +251,10 @@
     .botao-recuperacao {
         top: 450px;
         left: 245px;
+    }
+    .erro {
+        margin-left: 45px;
+        margin-top: 435px;
     }
 }
 }

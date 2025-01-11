@@ -8,8 +8,11 @@
     position: fixed;
 
 .imgdeFundo{
-    margin-left: 33%;
-    margin-top: -145px;
+    position: fixed;
+    z-index: -10;
+    right: -200px;
+    top: 100px;
+    margin-top: -270px;
     width: 1224px;
     height: auto;
 }
@@ -18,12 +21,13 @@
     position: absolute;
     color: #4B626C;
     padding: 25px;
-    left: 90px;
-    top: 0px;
+    left: 86px;
+    top: -10px;
     font-size: 6.4rem;
 }
 .form{
     display: flex;
+    flex-direction: column;
     width: 475px;
     z-index: 1000;
 }
@@ -55,12 +59,12 @@
 }
 
 .erro{
-    position: absolute;
     background-color: transparent;
     color: red;
-    margin-left: 180px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    font-size: 1.4rem;
+    margin-left: 83px;
+    margin-top: 255px;
+    margin-bottom: -175px;
 }
 
 .botao-registro {
@@ -93,9 +97,15 @@
 .tela a:hover {
     color: #4B626C;
 }
+@media (max-width: 1400px){
+    .imgdeFundo {
+        left: 380px;
+        height: auto;
+    }
+}
 @media (max-width: 1100px){
     .imgdeFundo {
-        margin-left: 350px;
+        left: 300px;
         width: 900px;
         height: auto;
     }
@@ -124,8 +134,8 @@
         overflow-y: auto;
     }
     .imgdeFundo {
-        margin-top: -150px;
-        margin-left: 70px;
+        margin-top: -250px;
+        left: 70px;
         width: 650px;
         height: auto;
     }
@@ -165,11 +175,16 @@
         top: 850px;
         left: 480px;
     }
+    .erro {
+        margin-left: 232px;
+        margin-top: 600px;
+        margin-bottom: -559px;
+    }
 }
 @media (max-width: 540px){
     .imgdeFundo {
-        margin-top: -100px;
-        margin-left: 30px;
+        margin-top: -190px;
+        left: 30px;
         width: 500px;
         height: auto;
     }
@@ -192,12 +207,17 @@
         top: 770px;
         left: 373px;
     }
+    .erro {
+        margin-left: 125px;
+        margin-top: 510px;
+        margin-bottom: -469px;
+    }
 }
 
 @media (max-width: 425px){
     .imgdeFundo {
-        margin-left: 0px;
-        margin-top: -75px;
+        left: 0px;
+        margin-top: -175px;
         width: 450px;
         height: auto;
     }
@@ -222,11 +242,16 @@
         top: 720px;
         left: 320px;
     }
+    .erro {
+        margin-left: 75px;
+        margin-top: 458px;
+        margin-bottom: -416px;
+    }
 }
 
 @media (max-width: 375px){
     .imgdeFundo {
-        margin-top: -50px;
+        margin-top: -175px;
         width: 380px;
         height: auto;
     }
@@ -247,6 +272,11 @@
     .botao-registro {
         top: 690px;
         left: 295px;
+    }
+    .erro {
+        margin-left: 50px;
+        margin-top: 428px;
+        margin-bottom: -386px;
     }
 }
 
@@ -277,6 +307,11 @@
     .botao-registro {
         top: 610px;
         left: 245px;
+    }
+    .erro {
+        margin-left: 45px;
+        margin-top: 358px;
+        margin-bottom: -316px;
     }
 }
 }

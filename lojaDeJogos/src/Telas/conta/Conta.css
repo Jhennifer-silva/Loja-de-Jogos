@@ -252,6 +252,9 @@
         margin: 150px 120px;
         text-align: center;
     }
+    .telaConta #admin {
+        font-size: 18px;
+    }
 }
 @media (max-width: 375px) {
     .telaConta #carrinhodecompras {
@@ -271,5 +274,8 @@
     .telaConta .grid {
         margin: 150px 62px;
         text-align: center;
+    }
+    .telaConta #titulo {
+        font-size: 2.4rem;
     }
 }
