@@ -20,7 +20,7 @@ src/
 ├── app.jsx                # Configuração e estrutura principal do projeto
 ├── main.jsx               # Ponto de entrada da aplicação
 ├── styles.css             # Estilização global da Navbar e do Footer
-├── pages/                 # Páginas do projeto
+├── Telas/                 # Páginas do projeto
 │   ├── conta/             # Tela de conta do usuário
 │   ├── login/             # Tela de login
 │   ├── populares/         # Tela de jogos populares
@@ -42,9 +42,9 @@ src/
 
 ## 📚 Processo Trainee
 
-Este projeto faz parte do processo trainee da **Emakers** com o objetivo de capacitar os participantes, fornecendo a base necessária para o desenvolvimento front-end. Durante o processo, pude desenvolver habilidades práticas e aplicar conceitos de desenvolvimento web. A experiência foi enriquecedora e permitiu o aprendizado em um ambiente colaborativo e dinâmico.
+Este projeto faz parte do processo trainee da **Emakers** com o objetivo de capacitar os participantes, fornecendo a base necessária para o desenvolvimento front-end. Durante o processo, pude desenvolver habilidades práticas e aplicar conceitos de desenvolvimento web. Uma ótima experiência.
 
 ## 🙏 Agradecimentos
 
-Agradeço à **Emakers** pela oportunidade de aprendizado e crescimento técnico durante o processo trainee. Estou entusiasmada por ter concluído este projeto e por ter desenvolvido competências valiosas para minha trajetória profissional.
+Agradeço à **Emakers** pela oportunidade de aprendizado e crescimento técnico durante o processo trainee. Fico feliz por ter concluído o projeto e por ter desenvolvido boas competências para minha trajetória profissional.
 
