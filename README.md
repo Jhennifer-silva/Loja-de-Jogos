@@ -1,36 +1,50 @@
-# Loja de Jogos
-Esse é o projeto de uma loja de jogos desenvolvido para o processo trainee da empresa júnior Emakers. Este README tem atualmente como objetivo fornecer uma visão geral do projeto.
+# Loja de Jogos 🎮
 
-## Descrição do Projeto
-Este projeto é uma aplicação web para uma loja de jogos. O objetivo é criar uma interface funcional. O design das telas foi fornecido pela Emakers e a tarefa é implementar essa interface seguindo o design proposto.
+Este é o projeto de uma loja de jogos desenvolvido para o processo trainee da empresa júnior **Emakers**. O objetivo é implementar uma interface funcional e responsiva, seguindo o design fornecido pela Emakers.
 
-## Tecnologias a ser utilizadas
-HTML
+## 🖍 Descrição do Projeto
 
-CSS
+A aplicação é uma loja de jogos com diferentes telas e funcionalidades interativas. Todo o desenvolvimento seguiu os conceitos de front-end ensinados e o uso do framework **React**.
 
-JavaScript
+## 🚀 Tecnologias Utilizadas
 
-React
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **React**
 
-## Objetivos de Funcionalidades
-- Formulários: Implementação de formulários funcionais para as telas de Login.
+## 🖂 Estrutura do Projeto
 
-- Barra de Navegação (NavBar): Desenvolvimento de uma NavBar funcional para fácil navegação.
+```
+src/
+├── app.jsx                # Configuração e estrutura principal do projeto
+├── main.jsx               # Ponto de entrada da aplicação
+├── styles.css             # Estilização global da Navbar e do Footer
+├── pages/                 # Páginas do projeto
+│   ├── conta/             # Tela de conta do usuário
+│   ├── login/             # Tela de login
+│   ├── populares/         # Tela de jogos populares
+│   ├── principal/         # Tela principal da loja
+│   ├── recuperar-conta/   # Tela para recuperação de conta
+│   ├── registro/          # Tela de registro de usuários
+```
 
-- Carrossel: Implementação de um carrossel com imagens dos jogos.
+## 🌟 Funcionalidades Desenvolvidas
 
-- Responsividade: Adaptação das telas para diferentes dispositivos (desktop e mobile).
+- **Formulários:** Implementação de formulários funcionais para login, registro e recuperação de conta.
+- **Barra de Navegação (NavBar):** Uma NavBar funcional e estilizada para facilitar a navegação.
+- **Carrossel de Jogos:** Carrossel interativo exibindo jogos populares.
+- **Responsividade:** Adaptação completa para dispositivos desktop e mobile.
+- **Versão Mobile:** Todas as telas otimizadas para visualização em smartphones.
+- **Footer Informativo:** Rodapé com informações relevantes.
+- **Menu "Sanduíche":** Menu móvel para facilitar a navegação em dispositivos menores.
+- **Uso do useState:** Implementação de interatividade usando o hook useState.
 
-- Versão Mobile: Construção da versão Mobile das telas.
+## 📚 Processo Trainee
 
-- Footer: Criação de um rodapé informativo.
+Este projeto faz parte do processo trainee da **Emakers** com o objetivo de capacitar os participantes, fornecendo a base necessária para o desenvolvimento front-end. Durante o processo, pude desenvolver habilidades práticas e aplicar conceitos de desenvolvimento web. A experiência foi enriquecedora e permitiu o aprendizado em um ambiente colaborativo e dinâmico.
 
-- Menu "Sanduíche": Implementação de um menu móvel.
+## 🙏 Agradecimentos
 
-- Uso de useState: Utilização do hook useState em funcionalidades interativas.
+Agradeço à **Emakers** pela oportunidade de aprendizado e crescimento técnico durante o processo trainee. Estou entusiasmada por ter concluído este projeto e por ter desenvolvido competências valiosas para minha trajetória profissional.
 
-## Processo Trainee
-O objetivo deste processo trainee é capacitar os participantes, de modo que, mesmo sem nenhum contato prévio com a área de desenvolvimento, possam adquirir habilidades práticas para programar telas funcionais e visualmente atraentes. Estou entusiasmada com a oportunidade de aprender e desenvolver minhas competências técnicas com o suporte da Emakers.
-
-Agradeço pela oportunidade.
